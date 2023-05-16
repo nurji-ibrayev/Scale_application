@@ -1,6 +1,6 @@
 # Scale_application
 <div align="center">
-  <img src="https://anonymfile.com/yKDYo/screenshot-2.png" height="300"/>
+  <img src="https://anonymfile.com/i/648aRm/screenshot-2.png" height="300"/>
 </div>
 <div align="center">
   <img src="https://anonymfile.com/pdmYx/screenshot-3.png" height="300"/>
