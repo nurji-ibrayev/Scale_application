@@ -105,7 +105,7 @@ namespace Scale_application.Controllers
 
                 foreach (DataRow column in dataTable.Rows)
                 {
-                    categoryFields[column.Field<string>("ColumnName")] = column["ProviderSpecificDataType"].ToString().Replace("System.Data.SqlTypes.", string.Empty);
+                    categoryFields[column.Field<string>("ColumnName")] = column["ProviderSpecificDataType"].ToString().Replace("System.Data.SqlTypes.Sql", string.Empty);
                 }
             }
 
