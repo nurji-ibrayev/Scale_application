@@ -53,7 +53,7 @@ async function getCategoriesFields(categoryName)
 				let input = document.createElement('input');
 				input.id = fieldName;
 				input.classList.add("additional_fields");
-				input.placeholder = data.value[fieldName];
+				input.placeholder = "Add " + data.value[fieldName] + " value";
 				productCreation.appendChild(input);
 			}
 		});
