@@ -39,7 +39,7 @@ function addInput()
 	container.appendChild(input);
 
 	//Create array of options to be added
-	var array = ["varchar(50)","int(12)","decimal(10, 2)"];
+	var array = ["varchar(50)","int","decimal(10, 2)"];
 
 	//Create and append select list
 	var select_list = document.createElement("select");
