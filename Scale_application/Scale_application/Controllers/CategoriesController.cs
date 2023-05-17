@@ -47,7 +47,7 @@ namespace Scale_application.Controllers
 
             if (additionalFields.Count > 1)
             {
-                string command = $"CREATE TABLE {additionalFields["CategoryName"]}(ID int IDENTITY(1,1) NOT NULL,CategoryName varchar(50) NOT NULL,Name varchar(50) NOT NULL,Description varchar(128) NULL,Image nvarchar(260) NULL,Price decimal(19,4) NOT NULL";
+                string command = $"CREATE TABLE {additionalFields["CategoryName"]}(ID int IDENTITY(1,1) NOT NULL,CategoryName varchar(50) NOT NULL,Name varchar(50) NOT NULL,Description varchar(128) NULL,Image nvarchar(260) NULL,Price decimal(19,2) NOT NULL";
 
                 foreach(string additional_field in additionalFields.Keys)
                 {
@@ -61,7 +61,7 @@ namespace Scale_application.Controllers
             }
             else
             {
-                sqlCommand = new SqlCommand($"CREATE TABLE {additionalFields["CategoryName"]}(ID int IDENTITY(1,1) NOT NULL,CategoryName varchar(50) NOT NULL,Name varchar(50) NOT NULL,Description varchar(128) NULL,Image nvarchar(260) NULL,Price decimal(19,4) NOT NULL);", connection);
+                sqlCommand = new SqlCommand($"CREATE TABLE {additionalFields["CategoryName"]}(ID int IDENTITY(1,1) NOT NULL,CategoryName varchar(50) NOT NULL,Name varchar(50) NOT NULL,Description varchar(128) NULL,Image nvarchar(260) NULL,Price decimal(19,2) NOT NULL);", connection);
             }
             
 
