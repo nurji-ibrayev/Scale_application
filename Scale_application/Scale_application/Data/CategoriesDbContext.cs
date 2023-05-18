@@ -8,5 +8,10 @@ namespace Scale_application.Data
         public CategoriesDbContext(DbContextOptions options) : base(options)
         {
         }
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.UseCollation("Cyrillic_General_CI_AS");
+        }
     }
 }
