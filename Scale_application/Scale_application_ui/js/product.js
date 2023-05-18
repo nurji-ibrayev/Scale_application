@@ -95,7 +95,6 @@ async function insertProduct()
 
 		creationStatus.style.background = "lime";
 		creationStatus.style.color = "black";
-		creationStatus.style.color = "white";
 		creationStatus.style.visibility = "visible";
 		setTimeout(() => 
 		{
@@ -106,6 +105,7 @@ async function insertProduct()
 	{
 		creationStatus.innerHTML = "Fill required(*) fields";
 		creationStatus.style.background = "red";
+		creationStatus.style.color = "white";
 		creationStatus.style.visibility = "visible";
 	}
 }
