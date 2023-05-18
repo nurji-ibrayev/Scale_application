@@ -104,6 +104,12 @@ async function addCategory()
 	{
 		categoryName.style.borderColor = "red";
 		categoryName.classList.add("fill_required");
+		
+		setTimeout(() => 
+		{
+			categoryName.style.borderColor = "transparent";
+			categoryName.classList.remove("fill_required");
+		}, 5000);
 	}
 
 }
