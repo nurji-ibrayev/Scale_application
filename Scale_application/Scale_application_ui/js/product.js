@@ -94,6 +94,8 @@ async function insertProduct()
 		});
 
 		creationStatus.style.background = "lime";
+		creationStatus.style.color = "black";
+		creationStatus.style.color = "white";
 		creationStatus.style.visibility = "visible";
 		setTimeout(() => 
 		{
